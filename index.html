@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
+        <form action="">
+            <div class="form-1">
+                <fieldset class="form-2">
+                    <legend>Sözleşme Onay</legend>
+                    <input type="checkbox" name="onay" id="onay">
+                    <label for="onay">Aşağıdaki Bilgilerin doğruluğunu kabul ediyorum ve sözleşmesini onaylıyorum</label><br><br>
+                    <input type="submit" value="Formu Kaydet">
+                    <input type="reset" value="Formu Temizle">
+                </fieldset>
+            </div>
+            <div class="form-1">
+                <fieldset class="form-2">
+                    <legend>Kişisel Bilgiler</legend>
+                    <label for="security-id" class="titles">Form Güvenlik ID</label>
+                    <input type="text" disabled value="123456"><br>
+                    <label for="ad" class="titles">Ad</label>
+                    <input type="text" name="ad" id="ad"><br>
+                    <label for="soyad" class="titles">Soyad</label>
+                    <input type="text" name="soyad" id="soyad"><br>
+                    <label for="yas" class="titles">Yaş</label>
+                    <input type="number" name="yas" id="yas" min="18" max="59"><br>
+                    <label for="mail" class="titles">Email Adresi</label>
+                    <input type="email" name="mail" id="mail"><br>
+                    <label for="foto" class="titles">Fotoğraf Ekle</label>
+                    <input type="file" name="foto" id="foto"><br>
+                </fieldset>
+            </div>
+            <div class="form-1">
+                <fieldset class="form-2">
+                    <legend>Diğer Bilgiler</legend>
+                    <p><strong>Buradaki alanlar mesleki deneyimi kapsar</strong></p>
+                    <label for="gdate" class="titles">Sektöre Giriş Tarihi</label>
+                    <input type="date" name="date" id="gdate"><br>
+                    <label for="gdeneyim" class="titles">Sektör Deneyimi</label>
+                    <select name="deneyim" id="gdeneyim">
+                        <option value="1-5">1-5 Yıl</option>
+                        <option value="6-10">6-10 Yıl</option>
+                        <option value="11-15">11-15 Yıl</option>
+                        <option value="15+">15 üzeri</option>
+                    </select><br>
+                    <label for="diller" class="titles">Programlama Dilleri</label>
+                    <select name="programlama_dili" id="diller" multiple>
+                        <option value="csharp">C#</option>
+                        <option value="php">PHP</option>
+                        <option value="java">Java</option>
+                        <option value="js">JavaScript</option>
+                        <option value="py">Python</option>
+                        <option value="cpp">C++</option>
+                        <option value="go">Go</option>
+                        <option value="lua">Lua</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="form-1">
+                <fieldset class="form-2">
+                    <legend>Sözleşme Kopyası</legend>
+                    <textarea name="" id="" cols="50" rows="7" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio pariatur similique, magnam voluptatem quae quas amet sapiente vitae hic, ullam libero ea nemo expedita ipsum ratione dolorem? Natus, optio dolores?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta saepe nemo impedit ullam? Illum neque explicabo repellendus sed provident aperiam odit inventore, quas dolorem vitae delectus molestiae reprehenderit assumenda repudiandae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error laudantium libero accusamus totam eius et quasi, voluptatibus quam minima iure, dolorem quas id distinctio dolorum fuga explicabo corporis temporibus odit?</textarea>
+                </fieldset>
+            </div>
+            <div class="form-1">
+                <fieldset class="form-2">
+                    <legend>Mail Listesi</legend>
+                    <label for="mail-list" class="titles">Mail listesine katılmak <b>istiyorum</b></label>
+                    <input type="radio" name="secim" id="mail-list"><br>
+                    <label for="mail-list1" class="titles">Mail listesine katılmak <u><b>istemiyorum</b></u></label>
+                    <input type="radio" name="secim" id="mail-list1">
+                </fieldset>
+            </div>
+        </form>
+</body>
+</html>

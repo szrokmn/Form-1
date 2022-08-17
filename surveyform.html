@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="surveyform.css" />
+    <title>Clarusway Survey Form</title>
+    <style>
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      #comment2 {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form1">
+      <h1>Clarusway Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform</p>
+      <form action="">
+        <label for="isim">Name</label><br /><br />
+        <input
+          type="text"
+          name="girilen isim"
+          id="isim"
+          placeholder="Enter your name"
+        /><br />
+        <label for="soyad">Surname</label><br /><br />
+        <input
+          type="text"
+          name="girilen soyad"
+          id="soyad"
+          placeholder="Enter your Surname"
+        /><br />
+        <label for="mail">Email</label><br /><br />
+        <input
+          type="email"
+          name="girilen mail"
+          id="mail"
+          placeholder="user@clarusway.com"
+        /><br />
+        <p>Which option best describes your current role?</p>
+        <select name="girilen rol" id="">
+          <option value="" disabled selected>Select Current Role</option>
+          <option value="">Student</option>
+          <option value="">Teacher</option>
+          <option value="">Full time job</option>
+          <option value="">Part time job</option>
+          <option value="">Full time learner</option>
+          <option value="">Prefer not to say</option>
+        </select>
+        <p>Would you recommend Clarusway to a friend?</p>
+        <input type="radio" name="istek" id="evet" checked />
+        <label for="evet">Definitely, Yes</label><br />
+        <input type="radio" name="istek" id="belki" />
+        <label for="belki">Maybe</label><br />
+        <input type="radio" name="istek" id="emin" />
+        <label for="emin">Not sure</label><br />
+        <input type="radio" name="istek" id="hayır" />
+        <label for="hayır">Definitely,No</label><br />
+        <p>What is your favorite feature of Clarusway?</p>
+        <select name="favori" id="fav">
+          <option value="" disabled selected>Select an option</option>
+          <option value="">Courses</option>
+          <option value="">Projects</option>
+          <option value="">Community</option>
+          <option value="">Mentors</option>
+        </select>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <input type="checkbox" name="tercih" id="onuc" />
+        <label for="onuc">Front-end Projects</label><br />
+        <input type="checkbox" name="tercih" id="arkauc" />
+        <label for="arkauc">Back-end Projects</label><br />
+        <input type="checkbox" name="tercih" id="veri" />
+        <label for="veri">Data Science</label><br />
+        <input type="checkbox" name="tercih" id="kurs" />
+        <label for="kurs">Additional Courses</label><br />
+        <p>Any comments or suggestions?</p>
+        <textarea
+          name="yorum"
+          id="comment2"
+          cols="50"
+          rows="6"
+          placeholder="Enter your comment here... Thanks for your comments..."
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
